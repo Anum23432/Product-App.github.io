@@ -9,127 +9,175 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
   <body>
+    
     <main>
       <header>
-        <h1>Our Products</h1>
+        
+        <nav class="navbar bg-dark">
+          <div class="star">
+            <span class="navbar-brand mb-0 h1" style="color:white; " >Shopping Cart</span>
+          </div>
+        </nav>
+        
+        
         <!-- buttons in header -->
-        <ul class="buttons">
-          <li data-filter="all" class="active"><a href="#">All</a></li>
-          <li data-filter="footwear"><a href="#">FootWear</a></li>
-          <li data-filter="clothes"><a href="#">Clothes</a></li>
-          <li data-filter="electronics"><a href="#">Electronics</a></li>
-        </ul>
+        <div class="buttons">
+          <p data-filter="all" class="active"><a href="#">All</a></p>
+          <p data-filter="footwear"><a href="#">FootWear</a></p>
+          <p data-filter="clothes"><a href="#">Clothes</a></p>
+          <p data-filter="electronics"><a href="#">Electronics</a></p>
+        </div>
       </header>
+
+      
       
       
       <div>
           <!-- footwear items -->
         <ul class="product">
           <li data-category="footwear">
-            <img src="Images/sh1.jpg" alt="Blue Heels" />
-            <p>Blue Heels</p>
-            <h4>Rs/-  2500</h4>
-            <button>Add to Cart</button>
+            <div class="card" style="width: 18rem;">
+              <img src="images/sh1.jpg" class="card-img-top" alt="Blue heels">
+                <h5 class="card-title">Blue Heels</h5>
+                <p class="card-text">Rs/- 3000</p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
           </li>
           <li data-category="footwear">
-            <img src="Images/sh2.jpg" alt="Pink Sneakers" />
-            <p>Pink Sneakers</p>
-            <h4>Rs/- 2900</h4>
-            <button>Add to Cart</button>
+            <div class="card" style="width: 18rem;">
+              <img src="images/sh2.jpg" class="card-img-top" alt="Pink Sneakers">
+                <h5 class="card-title">Pink Sneakers</h5>
+                <p class="card-text">Rs/- 6000</p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
           </li>
           <li data-category="footwear">
-            <img src="Images/sh3.jpg" alt="White Joggers" />
-            <p>White Joggers</p>
-            <h4>Rs/- 3500</h4>
-            <button>Add to Cart</button>
+            <div class="card" style="width: 18rem;">
+              <img src="images/sh3.jpg" class="card-img-top" alt="White Joggers">
+                <h5 class="card-title">White Joggers</h5>
+                <p class="card-text">Rs/- 5000</p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
           </li>
           <li data-category="footwear">
-            <img src="Images/sh4.jpg" alt="Blue Athlete" />
-            <p>Blue Athlete</p>
-            <h4>Rs/- 3900</h4>
-            <button>Add to Cart</button>
+            <div class="card" style="width: 18rem;">
+              <img src="images/sh4.jpg" class="card-img-top" alt="Blue Athlete">
+                <h5 class="card-title">Blue Athlete</h5>
+                <p class="card-text">Rs/- 8500</p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
           </li>
           <li data-category="footwear">
-            <img src="Images/sh5.jpg" alt="Black" />
-            <p>Black Formal</p>
-            <h4>Rs/- 4000</h4>
-            <button>Add to Cart</button>
+            <div class="card" style="width: 18rem;">
+              <img src="images/sh5.jpg" class="card-img-top" alt="Black">
+                <h5 class="card-title">Black Formal</h5>
+                <p class="card-text">Rs/- 9500</p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
           </li>
           <!-- clothes items -->
           <li data-category="clothes" alt="White Shirt">
-            <img src="Images/Cl1.JPG.jpg" />
-            <p>White Shirt</p>
-            <h4>Rs/- 1500</h4>
-            <button>Add to Cart</button>
+            <div class="card" style="width: 18rem;">
+            <img src="images/Cl1.JPG.jpg" class="card-img-top" alt="White Shirt">
+            <h5 class="card-title">White Shirt</h5>
+            <p class="card-text">Rs/- 2500</p>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
           </li>
-          <li data-category="clothes" alt="Red Shirt">
-            <img src="Images/cl2.png" />
-            <p>Red Shirt</p>
-            <h4>Rs/- 1550</h4>
-            <button>Add to Cart</button>
+          <li data-category="clothes" >
+            <div class="card" style="width: 18rem;">
+              <img src="images/cl2.png" class="card-img-top" alt="Red Shirt">
+              <h5 class="card-title">Red Shirt</h5>
+              <p class="card-text">Rs/- 2500</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
           </li>
-          <li data-category="clothes" alt="Blue Shirt">
-            <img src="Images/cl3.jpg" />
-            <p>Blue Shirt</p>
-            <h4>Rs/- 1500</h4>
-            <button>Add to Cart</button>
+          <li data-category="clothes">
+            <div class="card" style="width: 18rem;">
+              <img src="images/cl3.jpg" class="card-img-top" alt="Sky Blue Shirt">
+              <h5 class="card-title">Sky Blue Shirt</h5>
+              <p class="card-text">Rs/- 2500</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
           </li>
-          <li data-category="clothes" alt="Royal Blue Shirt">
-            <img src="Images/cl4.jpg" />
-            <p>Royal Blue Shirt</p>
-            <h4>Rs/- 1600</h4>
-            <button>Add to Cart</button>
+          <li data-category="clothes">
+            <div class="card" style="width: 18rem;">
+              <img src="images/cl4.jpg" class="card-img-top" alt="Royal Blue Shirt">
+              <h5 class="card-title">Royal Blue Shirt</h5>
+              <p class="card-text">Rs/- 2500</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
           </li>
-          <li data-category="clothes" alt="Pink Shirt">
-            <img src="Images/cl5.jpg" />
-            <p>Pink Shirt</p>
-            <h4>Rs/- 1500</h4>
-            <button>Add to Cart</button>
+          <li data-category="clothes">
+            
+            <div class="card" style="width: 18rem;">
+              <img src="images/cl4.jpg" class="card-img-top" alt="Pink Shirt">
+              <h5 class="card-title">Pink Shirt</h5>
+              <p class="card-text">Rs/- 2500</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
           </li>
 
           <!-- electronics items -->
-          <li data-category="electronics" alt="headphones">
-            <img src="Images/el1.png" />
-            <p>Red Headphones</p>
-            <h4>Rs/- 2000</h4>
-            <button>Add to Cart</button>
+          <li data-category="electronics" >
+            <div class="card" style="width: 18rem;">
+              <img src="images/el1.png" class="card-img-top" alt="Headphones">
+              <h5 class="card-title">Headphones</h5>
+              <p class="card-text">Rs/- 1500</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
           </li>
           <li data-category="electronics" alt="Red Headphone">
-            <img src="Images/el2.png" />
-            <p>Black Headphones</p>
-            <h4>Rs/- 2000</h4>
-            <button>Add to Cart</button>
+           
+            <div class="card" style="width: 18rem;">
+              <img src="images/el2.png" class="card-img-top" alt="Headphones">
+              <h5 class="card-title">Headphones</h5>
+              <p class="card-text">Rs/- 1500</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
           </li>
           <li data-category="electronics" alt="Mobile">
-            <img src="Images/el3.jpg" />
-            <p>Samsung Mobile Phone</p>
-            <h4>Rs/- 55000</h4>
-            <button>Add to Cart</button>
+            <div class="card" style="width: 18rem;">
+              <img src="images/el3.jpg" class="card-img-top" alt="Mobile"/>
+              <h5 class="card-title">Samsung Mobile</h5>
+              <p class="card-text">Rs/- 55000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
           </li>
           <li data-category="electronics" alt="Vivo">
-            <img src="Images/el4.jpg" />
-            <p>Vivo Mobile Phone</p>
-            <h4>Rs/- 35000</h4>
-            <button>Add to Cart</button>
+            <div class="card" style="width: 18rem;">
+              <img src="images/el4.jpg" class="card-img-top" alt="Mobile">
+              <h5 class="card-title">Vivo Mobile</h5>
+              <p class="card-text">Rs/- 35000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
           </li>
           <li data-category="electronics" alt="Laptop1">
-            <img src="Images/el5.jpg" />
-            <p>Laptop</p>
-            <h4>Rs/- 50000</h4>
-            <button>Add to Cart</button>
+            <div class="card" style="width: 18rem;">
+              <img src="images/el5.jpg" class="card-img-top" alt="Laptop">
+              <h5 class="card-title">Laptop</h5>
+              <p class="card-text">Rs/- 55000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
           </li>
           <li data-category="electronics" alt="Laptop2">
-            <img src="Images/el6.jpeg" />
-            <p>Laptop</p>
-            <h4>Rs/- 50000</h4>
-            <button>Add to Cart</button>
+            <div class="card" style="width: 18rem;">
+              <img src="images/el6.jpeg" class="card-img-top" alt="Laptop2">
+              <h5 class="card-title">Laptop</h5>
+              <p class="card-text">Rs/- 65000</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
           </li>
         </ul>
       </div>
     </main>
     <script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
   </body>
 </html>
 </body>
